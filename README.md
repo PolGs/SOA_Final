@@ -6,11 +6,13 @@ avoiding collisions with itself and the borders of the screen. The more food the
 becomes. Unfortunately, Zeos currently does not provide the necessary device access support (keyboard
 and screen)
 
-## Installation
+## Build
 
 
 ```bash
-
+make
+gcc -Wall -Wstrict-prototypes -o build build.c
+./build bootsect system.out user.out > zeos.bin
 ```
 
 ## Usage
